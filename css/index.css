@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;1,100;1,300&family=PT+Sans&family=Roboto:ital,wght@0,500;1,300;1,400&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body,html{
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	width: 100vw;
+	height:  100vh;
+}
+
+.main-menu a{
+	 
+	
+	align-items: center;
+	justify-content: center;
+	padding: 3px 12px;
+	border-radius: 3px;
+	outline: none;
+	transition: 0.4s;
+	text-transform: capitalize;
+} 
+
+.main-menu a:hover{
+	background: #000;
+	color: aliceblue;
+
+}
+
+.right-menu a{
+	align-items: center;
+	justify-content: center;
+	padding: 3px 12px;
+	border-radius: 3px;
+	outline: none;
+	transition: 0.4s;
+	color: #000;
+}
+
+.right-menu a:hover{
+
+	color: aliceblue;
+
+}
+
+.btn-clk{
+	position: relative;
+}
+
+.btn-clk:hover .drop-down{
+	visibility: visible;
+}
+.drop-down{
+	position: absolute;
+	right: 0;
+	top: 32px;
+	background: silver;
+	visibility: hidden;
+
+}
+.drop-down-items{
+	padding: 2px;
+	margin-top: 1px;
+
+}
+.drop-down-items li a{
+	display: inline-block;
+	text-align: center;
+	width: 120px;
+	margin-top: 2px;
+	font-size: 12px;
+}
+
+nav ul li{
+	position: relative;
+}
+ .vis{
+	position: absolute;
+	display: none;
+ }
+
+
+
+nav ul li :hover .vis {
+	display: block;
+}
+
+.left-ali{
+	left: 73px;
+	top: 0px;
+	background-color: silver;
+}
+.left-ali li{
+	background: silver;
+}
+
+/* hero section */
+
+.review li{
+	
+	margin-right: -1px;
+}
+
+.review li a{
+	display: inline-block;
+	width: 30px; 
+	height: 30px;
+	border-radius: 100%;
+	overflow: hidden;
+	/* padding: 1px; */
+	border: 1px solid silver;
+}
+
+.review li a img{
+	width: 100%;
+	height: 100%;
+}
+.star li:first-child{
+	color: aliceblue;
+}
+.star li{
+	color: rgb(121, 187, 121);
+}
+#discover::after{
+	content: '';
+	display: block;
+	height:2px;
+	width: 150px;
+	background-color: brown;
+	margin-top: 5px;
+}
+
+
+/* footer staart */
+#footer_about_header li:hover a{
+ color: rgb(86, 88, 90);
+ text-decoration: underline;
+}
+
+#social-link li {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#social-link li a{
+	
+	display: inline-block;
+	background: rgb(238, 234, 234);
+	padding: 1px 3px;
+	color: rgb(27, 6, 6);
+	border: 1px solid silver;
+	border-radius: 100px;
+	transition: .5s;
+}
+
+#social-link li:hover a{
+	background: #0F172A;
+	color: white;
+}
+
+
+.active #card{
+    left: calc(100% - 500px);
+}
+.active .container{
+   transform: translateX(-000px);
+}
+ 
+
+
+
+
+
+
+
+

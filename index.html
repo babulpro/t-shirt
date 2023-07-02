@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    
+    <title>Document</title>
+    <script type="module" src="item.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/a8759c19ad.js" crossorigin="anonymous"></script> -->
+
+</head>
+
+
+
+
+<!-- <i class="fa-brands fa-facebook"></i> -->
+
+
+
+
+
+<body class="transition-all bg-slate-100">
+
+  
+
+
+ <main>
+
+              <!-- nav section -->
+
+
+    <nav class="sticky top-0 z-50 bg-slate-400">
+        <div class="container flex items-center justify-between m-auto">
+            <div class="flex items-center">
+                <div class="p-2 mr-1 text-yellow-100">
+                   
+                   <a href="#">
+                    <div class="logo"><i class="fa-solid fa-house"></i>
+                        <span class="materials">store</span>
+                        </div>
+                   </a>
+    
+                </div>
+                <div class="brand-title">
+                    <a href="Brand Name"></a>
+                </div>
+            </div>
+            <div class="hidden main-menu md:inline-block ">
+               <ul class="flex">
+                <li><a href="#cabins">our items</a></li>
+                <li><a href="#inspried">discount</a></li>
+                <li><a href="#grift">get from home</a></li>
+                <li class="btn-clk"><a href="#about">about us</a>
+                    <div class="drop-down">
+                        <ul class="drop-down-items">
+                            <li><a href="#">company</a></li>
+                            
+                            <li><a href="#">location</a></li>
+                            <li><a href="#">delivery</a></li>
+                            <li class="clk"><a href="#">marketing</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+               </ul>
+    
+            </div>
+            <div class="right-menu  md:hidden ">
+                <button class="px-1 text-white btn-clk hover:bg-slate-400 hover:text-slate-900"> <span><i class="fa-solid fa-bars"></i></span>
+                
+                    <div class="drop-down">
+                        <ul class="drop-down-items">
+                            <li><a href="#">Our Items</a></li>
+                            <li><a href="#">Discount</a></li>
+                            <li><a href="#">Get from home</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                    </div>
+                </button>
+            </div>
+
+            <div class="right-menu">
+                <button class="px-1 text-slate-900 hover:bg-black btn-clk hover:rounded-xl hover:text-slate-300"> <span><i class="relative fa-solid fa-user"></i></span>
+                
+                    <div class="drop-down">
+                        <ul class="drop-down-items">
+                            <li><a href="#">Log In</a></li>
+                            <li><a href="#">Setting</a></li>
+                            <li><a href="#">Profile</a>
+                            
+                                
+                            </li>
+                            <li><a href="#">Log Out</a></li>
+                        </ul>
+                    </div>
+                </button>
+            </div>
+    
+        </div>
+    </nav>
+
+
+
+<!-- header fixed item show -->
+
+    <header class="container m-auto bg-[#C4C9CF] grid grid-cols-2 py-5 px-10  sticky top-5">
+        <div class=" text-sm md:text-2xl md:underline uppercase ">
+            <h1 class="text-red-900">Your shopping is here</h1>
+        </div>
+
+        <div id="shopping" class="flex  justify-end relative text-right">
+            <img class="w-9" src="image/shopping.svg"> <span id="quantity" class=" bg-red-600 rounded-full flex justify-center items-center text-[#fff] absolute right-8  p-1">0</span>
+        </div>
+        
+    </header>
+
+    <!--  main contain -->
+
+   <section class="container m-auto bg-slate-300 ">
+    <div id="container" class="transition-all ">
+        
+        <ul id="list" class="grid md:grid-cols-2  lg:grid-cols-3 gap-4 mt-0">
+                
+        </ul>
+    </div>
+
+
+    <div id="card" class="fixed top-0 left-[100%] w-full  md:w-[500px] bg-[#453E3B]  h-screen ">
+
+     
+        <h1 class=" m-0 px-1 flex items-center mb-3 capitalize text-white underline">your listed items</h1>
+        <ul id="listCard" class="">
+
+        </ul>
+
+   
+        <div id="checkOut" class="absolute bottom-0  w-full grid grid-cols-2 gap-4 px-2 ">
+
+            <div id="total" class="bg-red-900 text-center text-slate-400 uppercase w-full h-[70px] flex justify-center items-center font-bold cursor-pointer rounded-md">0</div>
+            <div id="closeShopping"  class=" bg-[#C4C9CF] hover:bg-red-900 text-center text-slate-400 uppercase w-full h-[70px] flex justify-center items-center font-bold cursor-pointer rounded-md">close</div>
+        </div>
+    </div>
+
+   </section>
+
+ 
+
+
+ 
+
+
+<!-- fotter up
+
+ 
+
+    
+<!-- footer -->
+<footer>
+     
+
+        <div class="container m-auto">
+            <div class="px-1 py-4 bg-[#DCE0E1] text-slate-900 ">
+            <h1 class="pt-3 capitalize font-lg" >Signup to our newsletter</h1>
+            <div class="grid gap-3 mt-4 lg:grid-cols-2">
+                <div class="text-sm">
+                    <p class="font-[14px] ">For a weekly curated collection of 3 things you can party,eat,drinks or <br> packet for home switch of the busy everyday.</p>
+                </div>
+
+                <form class="grid sm:grid-cols-2">
+
+                    <input class="p-2 text-sm text-black border-none rounded-md outline-none" type="email" required placeholder="please input your email" id="email">
+
+                    <button type="submit" class="px-4 py-1 mt-4 text-black uppercase rounded-lg cursor-pointer sm:mt-0 sm:ml-auto bg-slate-300 hover:bg-slate-800 hover:text-slate-400" type="button" value="join the mailing list">join the mailing list</button>
+
+                </form>
+            </div>
+
+
+            </div>
+        </div>
+
+        <div class="container m-auto bg-black">
+        <hr>
+        <div class="grid items-center justify-center  py-10 sm:grid-cols-3 gap-9 ">
+            
+            <div>
+                <h1 class="px-1 text-red-900 uppercase">storefood<br>
+                
+                    1/22 mainroad,<br>
+                    bonani,dhaka
+
+                </h1>
+                <p class="px-1 font-sm text-red-900">email:storfood@dhaka.com</p>
+                
+            </div>
+            <div>
+                <p class="text-red-900"> 
+                    &copy2023  storefood
+                </p>
+            </div>
+            <div>
+                <ul class="flex sm:justify-evenly " id="social-link">
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        
+        </div>
+
+</footer>
+ </main>
+ 
+
+ <script  src="index.js" ></script>
+ 
+     
+ </script>
+</body>
+</html>
+ 
